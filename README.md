@@ -1,108 +1,54 @@
 # monster-lean
 
-<!-- ENUMINOUS-NETWORK:START -->
-**eNuminous network:** [All repositories](https://enuminous.github.io/EFMW/repositories.html) · [EFMW](https://enuminous.github.io/EFMW/) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [165 triplets](https://enuminous.github.io/FieldSpace/) · [Zoo](https://enuminous.github.io/Tortoise/) · [Lean](https://enuminous.github.io/Aristotle-102-Monolithic-Lean/) · [Engine](https://enuminous.github.io/Archimedes-Engine/) · [Papers](https://enuminous.github.io/medium/papers-essays-index.html) · [Audit](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/INTERLOCK_AUDIT.md)
+<!-- ENUMINOUS-UNIFIED-NAV:START -->
+## Repository navigation
 
-[Repository](https://github.com/enuminous/monster) · This repository is linked through its source; GitHub Pages is not enabled.
+**eNuminous network:** [All public repositories](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md) · [EFMW](https://github.com/enuminous/EFMW) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Zoo](https://github.com/enuminous/Tortoise) · [Papers](https://github.com/enuminous/papers) · [Quantum geometry](https://github.com/enuminous/Base888-Quantum-Geometry)
 
-<details>
-<summary>Recent repositories (9)</summary>
+**This project:** [Repository home](https://github.com/enuminous/monster) · [Subject index](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md#zoo-index-and-agents)
 
-- [Oroboros](https://github.com/enuminous/Oroboros) · [README](https://github.com/enuminous/Oroboros/blob/main/README.md) · [Page](https://enuminous.github.io/Oroboros/)
-- [P-NP](https://github.com/enuminous/P-NP) · [README](https://github.com/enuminous/P-NP/blob/main/README.md) · [Page](https://enuminous.github.io/P-NP/)
-- [Research-Program](https://github.com/enuminous/Research-Program) · [README](https://github.com/enuminous/Research-Program/blob/main/README.md) · [Page](https://enuminous.github.io/Research-Program/)
-- [I-Have-Guts](https://github.com/enuminous/I-Have-Guts) · [README](https://github.com/enuminous/I-Have-Guts/blob/main/README.md) · [Page](https://enuminous.github.io/I-Have-Guts/)
-- [Wrights-Law](https://github.com/enuminous/Wrights-Law) · [README](https://github.com/enuminous/Wrights-Law/blob/main/README.md) · [Page](https://enuminous.github.io/Wrights-Law/)
-- [Aristotle-eNuminous](https://github.com/enuminous/Aristotle-eNuminous) · [README](https://github.com/enuminous/Aristotle-eNuminous/blob/main/README.md) · [Page](https://enuminous.github.io/Aristotle-eNuminous/)
-- [Multiverse-Simulator](https://github.com/enuminous/Multiverse-Simulator) · [README](https://github.com/enuminous/Multiverse-Simulator/blob/main/README.md) · [Page](https://enuminous.github.io/Multiverse-Simulator/)
-- [accelerando-8192](https://github.com/enuminous/accelerando-8192) · [README](https://github.com/enuminous/accelerando-8192/blob/main/README.md) · [Page source](https://github.com/enuminous/accelerando-8192/blob/main/docs/index.html)
-- [Codex-888](https://github.com/enuminous/Codex-888) · [README](https://github.com/enuminous/Codex-888/blob/main/README.md) · [Page](https://enuminous.github.io/Codex-888/)
+<details open>
+<summary><strong>On this page</strong></summary>
 
-</details>
+- [⚠️ Disclaimer](#disclaimer)
+- [📚 Quick Start](#quick-start)
+- [📊 Core Finding: Hierarchical Digit Preservation](#core-finding-hierarchical-digit-preservation)
+- [Overview](#overview)
+- [The Hierarchical Walk](#the-hierarchical-walk)
+  - [Group 1: "8080"](#group-1-8080)
+  - [Group 2: "1742" (after "8080")](#group-2-1742-after-8080)
+  - [Group 3: "479" (after "80801742")](#group-3-479-after-80801742)
+- [Components](#components)
+  - [Rust Implementation (src/)](#rust-implementation-src)
+  - [Lean4 Formalization (MonsterLean/)](#lean4-formalization-monsterlean)
+  - [Documentation](#documentation)
+- [Building](#building)
+  - [Rust](#rust)
+  - [Lean4](#lean4)
+  - [Image Generation (Submodule)](#image-generation-submodule)
+- [The Monster Group](#the-monster-group)
+- [LLM Register Resonance Experiments](#llm-register-resonance-experiments)
+  - [Key Results](#key-results)
+  - [Quick Start](#quick-start-1)
+- [📊 Complete Index](#complete-index)
+  - [Program Index](#program-index)
+  - [Proof Index](#proof-index)
+  - [Document Index](#document-index)
+- [🔬 Experimental Results](#experimental-results)
+  - [1. Monster Walk (Core Finding)](#1-monster-walk-core-finding)
+  - [2. Computational Experiments](#2-computational-experiments)
+- [🚀 Future Work](#future-work)
+  - [Planned Investigations:](#planned-investigations)
+- [🚀 Quick Commands](#quick-commands)
 
-<details>
-<summary>Repository indexes (77)</summary>
-
-- [archive_org_reader/index.html](https://github.com/enuminous/monster/blob/main/archive_org_reader/index.html)
-- [monster-shards/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/index.html)
-- [monster-shards/shard-01/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-01/demo/index.html)
-- [monster-shards/shard-02/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-02/demo/index.html)
-- [monster-shards/shard-03/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-03/demo/index.html)
-- [monster-shards/shard-04/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-04/demo/index.html)
-- [monster-shards/shard-05/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-05/demo/index.html)
-- [monster-shards/shard-06/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-06/demo/index.html)
-- [monster-shards/shard-07/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-07/demo/index.html)
-- [monster-shards/shard-08/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-08/demo/index.html)
-- [monster-shards/shard-09/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-09/demo/index.html)
-- [monster-shards/shard-10/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-10/demo/index.html)
-- [monster-shards/shard-11/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-11/demo/index.html)
-- [monster-shards/shard-12/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-12/demo/index.html)
-- [monster-shards/shard-13/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-13/demo/index.html)
-- [monster-shards/shard-14/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-14/demo/index.html)
-- [monster-shards/shard-15/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-15/demo/index.html)
-- [monster-shards/shard-16/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-16/demo/index.html)
-- [monster-shards/shard-17/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-17/demo/index.html)
-- [monster-shards/shard-18/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-18/demo/index.html)
-- [monster-shards/shard-19/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-19/demo/index.html)
-- [monster-shards/shard-20/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-20/demo/index.html)
-- [monster-shards/shard-21/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-21/demo/index.html)
-- [monster-shards/shard-22/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-22/demo/index.html)
-- [monster-shards/shard-23/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-23/demo/index.html)
-- [monster-shards/shard-24/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-24/demo/index.html)
-- [monster-shards/shard-25/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-25/demo/index.html)
-- [monster-shards/shard-26/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-26/demo/index.html)
-- [monster-shards/shard-27/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-27/demo/index.html)
-- [monster-shards/shard-28/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-28/demo/index.html)
-- [monster-shards/shard-29/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-29/demo/index.html)
-- [monster-shards/shard-30/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-30/demo/index.html)
-- [monster-shards/shard-31/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-31/demo/index.html)
-- [monster-shards/shard-32/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-32/demo/index.html)
-- [monster-shards/shard-33/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-33/demo/index.html)
-- [monster-shards/shard-34/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-34/demo/index.html)
-- [monster-shards/shard-35/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-35/demo/index.html)
-- [monster-shards/shard-36/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-36/demo/index.html)
-- [monster-shards/shard-37/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-37/demo/index.html)
-- [monster-shards/shard-38/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-38/demo/index.html)
-- [monster-shards/shard-39/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-39/demo/index.html)
-- [monster-shards/shard-40/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-40/demo/index.html)
-- [monster-shards/shard-41/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-41/demo/index.html)
-- [monster-shards/shard-42/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-42/demo/index.html)
-- [monster-shards/shard-43/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-43/demo/index.html)
-- [monster-shards/shard-44/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-44/demo/index.html)
-- [monster-shards/shard-45/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-45/demo/index.html)
-- [monster-shards/shard-46/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-46/demo/index.html)
-- [monster-shards/shard-47/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-47/demo/index.html)
-- [monster-shards/shard-48/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-48/demo/index.html)
-- [monster-shards/shard-49/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-49/demo/index.html)
-- [monster-shards/shard-50/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-50/demo/index.html)
-- [monster-shards/shard-51/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-51/demo/index.html)
-- [monster-shards/shard-52/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-52/demo/index.html)
-- [monster-shards/shard-53/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-53/demo/index.html)
-- [monster-shards/shard-54/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-54/demo/index.html)
-- [monster-shards/shard-55/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-55/demo/index.html)
-- [monster-shards/shard-56/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-56/demo/index.html)
-- [monster-shards/shard-57/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-57/demo/index.html)
-- [monster-shards/shard-58/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-58/demo/index.html)
-- [monster-shards/shard-59/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-59/demo/index.html)
-- [monster-shards/shard-60/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-60/demo/index.html)
-- [monster-shards/shard-61/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-61/demo/index.html)
-- [monster-shards/shard-62/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-62/demo/index.html)
-- [monster-shards/shard-63/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-63/demo/index.html)
-- [monster-shards/shard-64/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-64/demo/index.html)
-- [monster-shards/shard-65/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-65/demo/index.html)
-- [monster-shards/shard-66/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-66/demo/index.html)
-- [monster-shards/shard-67/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-67/demo/index.html)
-- [monster-shards/shard-68/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-68/demo/index.html)
-- [monster-shards/shard-69/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-69/demo/index.html)
-- [monster-shards/shard-70/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-70/demo/index.html)
-- [monster-shards/shard-71/demo/index.html](https://github.com/enuminous/monster/blob/main/monster-shards/shard-71/demo/index.html)
-- [public/index.html](https://github.com/enuminous/monster/blob/main/public/index.html)
-- [showcase/index.html](https://github.com/enuminous/monster/blob/main/showcase/index.html)
-- [wasm_lattice_matcher/index.html](https://github.com/enuminous/monster/blob/main/wasm_lattice_matcher/index.html)
-- [web/index.html](https://github.com/enuminous/monster/blob/main/web/index.html)
 
 </details>
-<!-- ENUMINOUS-NETWORK:END -->
+
+**Related repositories:** [Tortoise](https://github.com/enuminous/Tortoise) · [Monolithic-Zoo-Lean4](https://github.com/enuminous/Monolithic-Zoo-Lean4) · [Monolithic-102-Zoo-Lean4](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [woodpecker](https://github.com/enuminous/woodpecker) · [Butterfly](https://github.com/enuminous/Butterfly) · [Nightengale](https://github.com/enuminous/Nightengale) · [Axolotl](https://github.com/enuminous/Axolotl)
+
+> **Evidence boundary:** A link between projects is navigation, not an assertion of proven equivalence, experimental validation, or shared authorship. See each repository’s own status and review notes.
+<!-- ENUMINOUS-UNIFIED-NAV:END -->
+
 
 Monster Group Walk Down to Earth - A mathematical exploration of the Monster group's order.
 
